@@ -1,16 +1,16 @@
+import { RouteObject } from 'react-router-dom';
 import Home from "@/pages/Home";
 import AppLayout from "../layout/AppLayout";
 import Experience from "@/pages/Experience";
 import Project from "@/pages/Project";
 
-const AppRoutes = [
+const AppRoutes: RouteObject[] = [
     {
         path: "/",
         element: <AppLayout />,
-
         children: [
             {
-                path: "/",
+                index: true,
                 element: <Home/>
             },
             {

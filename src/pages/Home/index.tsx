@@ -1,17 +1,13 @@
 import { Button } from "@/common/components/ui/Button";
 import { SocialIcons } from "../../common/index";
 import TechStackIcons from "@/common/components/TechStackIcons";
-import { Download, Mail } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 const Home = () => {
-
   const handleDownloadCV = () => {
-    window.open('file:///C:/Users/USUARIO/Downloads/Hilari_CV.pdf', '_blank');
-  }
-
-  const handleContactEmail = () => {
-    window.location.href = 'anguie_147@hotmail.com';
-  }
+    const cvUrl = '/Hilari_CV.pdf';
+    window.open(cvUrl, '_blank');
+  }; 
 
   return (
     <>
@@ -32,18 +28,12 @@ const Home = () => {
               >
                 <Download /> Descargar CV
               </Button>
-              <Button
-                onClick={handleContactEmail}
-                className="flex items-center gap-2 border border-green-500 hover:bg-green-500 px-6 py-3 rounded-lg transition-all"
-              >
-                <Mail /> Contáctame
-              </Button>
             </div>
           </div>
           <figure>
             <img
               src="https://res.cloudinary.com/dovqxavyy/image/upload/v1713823850/hila_el81tb.png"
-              alt=""
+              alt="Hilari Martinez"
               className="w-80 h-80 rounded-3xl"
             />
           </figure>
