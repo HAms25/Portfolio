@@ -44,7 +44,7 @@ const techStackLinks = [
 
 export default function TechStackIcons() {
   return (
-    <div className="mt-16 px-4">
+    <div className="px-4">
             <h2 className="text-2xl font-semibold text-center mb-8">Tech Stack</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-4xl mx-auto">
                 {techStackLinks.map(({ id, icon: Icon, label, color }) => (

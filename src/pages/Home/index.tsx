@@ -1,13 +1,13 @@
 import { Button } from "@/common/components/ui/Button";
 import { SocialIcons } from "../../common/index";
 import TechStackIcons from "@/common/components/TechStackIcons";
-import { Download } from 'lucide-react';
+import { Download } from "lucide-react";
 
 const Home = () => {
   const handleDownloadCV = () => {
-    const cvUrl = '/Hilari_CV.pdf';
-    window.open(cvUrl, '_blank');
-  }; 
+    const cvUrl = "/Hilari_CV.pdf";
+    window.open(cvUrl, "_blank");
+  };
 
   return (
     <>
@@ -39,7 +39,9 @@ const Home = () => {
           </figure>
         </div>
       </section>
-      <TechStackIcons />
+      <section className="w-full pb-20 px-5">
+        <TechStackIcons />
+      </section>
     </>
   );
 };
