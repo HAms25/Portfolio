@@ -19,7 +19,7 @@ const Home = () => {
             <h1 className="bg-gradient-to-bl from-indigo-500 from-10% via-sky-600 via-40% to-emerald-300 to-90% bg-clip-text text-transparent font-bold text-[4.5rem]">
               Hilari Martinez
             </h1>
-            <p className="text-[2.3rem]">Desarrolladora Front-end</p>
+            <p className="text-[2.3rem]">Desarrolladora UX / UI</p>
             <div className="flex gap-4 py-5">
               <Button
                 onClick={handleDownloadCV}
