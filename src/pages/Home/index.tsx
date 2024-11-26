@@ -5,8 +5,7 @@ import { Download } from "lucide-react";
 
 const Home = () => {
   const handleDownloadCV = () => {
-    const cvUrl = "/Hilari_CV.pdf";
-    window.open(cvUrl, "_blank");
+    window.location.href = "https://drive.google.com/uc?export=download&id=1kJ1QNoZbm1MdXZC63vZ9Zy0H9qW-yV2l";
   };
 
   return (
